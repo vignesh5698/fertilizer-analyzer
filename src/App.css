@@ -1,0 +1,26 @@
+
+.custom-card {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 2%;
+}
+
+.custom-title {
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.custom-center {
+  text-align: center;
+}
+
+.custom-bg {
+  background-color: lightgrey;
+}
+
+.custom-padding {
+  vertical-align: middle !important;
+}
