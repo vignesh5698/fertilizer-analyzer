@@ -7,8 +7,8 @@ class MasterPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isLogged: !false,
-      showRecommendation: !false,
+      isLogged: false,
+      showRecommendation: false,
       inputValues: null
     }
   }
