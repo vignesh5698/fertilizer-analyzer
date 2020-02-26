@@ -29,10 +29,10 @@ class Recommendations extends Component {
     super(props);
     this.state = {
       inputValues: props.inputValues || {
-        soilType: 'Alluvial',
-        nValue: 250,
-        pValue: 20,
-        kValue: 100
+        soilType: 'Yellow',
+        nValue: 480,
+        pValue: 11,
+        kValue: 111
       }
     }
   }
@@ -99,7 +99,7 @@ class Recommendations extends Component {
         recommendedFertilizer = 'AS fertilizer';
       }
     } else if(soilType === 'Yellow') {
-      if(nValue >= 480 && pValue >= 11 && pValue <= 22 && kValue < 110) {
+      if(nValue >= 480 && pValue >= 11 && pValue <= 22 && kValue >= 110) {
         recommendedFertilizer = 'Urea ammonium phosphate fertilizer';
       }
     }
@@ -107,7 +107,7 @@ class Recommendations extends Component {
   }
 
   renderRecommendation = () => {
-    const recommededFertilizer = this.getRecommendation();
+    const recommededFertilizer = this.getRecommendation() || 'No fertilizer available for given values';
     console.log(recommededFertilizer)
     return(
       <div>
