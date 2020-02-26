@@ -135,10 +135,10 @@ class Recommendations extends Component {
   render() {
     console.log(this.state.inputValues)
     return (
-      <div>
+      <div className='recommendation'>
         <div className="card custom-card">
           <h3 className="card-header custom-title">
-            Recommendation
+            RECOMMENDATION
           </h3>
           <div className="card-body">
             {this.renderInputValues()}

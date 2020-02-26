@@ -53,7 +53,7 @@ class Login extends Component {
             <input type="password" className="form-control" name="password" onChange={(e) => this.onChangeInput(e)} placeholder="Password" />
           </div>
           <div className="custom-center">
-            <button type="button" className="btn btn-primary" onClick={this.onSignIn}>Submit</button>
+            <button type="button" className="btn btn-outline-info" onClick={this.onSignIn}>Submit</button>
           </div>
         </form>
       </div>
@@ -63,10 +63,10 @@ class Login extends Component {
   render() {
     const { showError } = this.state;
     return (
-      <div>
+      <div className="login-page">
         <div className="card custom-card">
           <h3 className="card-header custom-title">
-            Recommendation system for identifying correct fertilizer to improve the crop field using IOT
+            RECOMMENDATION SYSTEM FOR IDENTIFYING CORRECT FERTILIZER TO IMPROVE THE CROP FIELD USING IOT
           </h3>
           <div className="card-body">
             {this.renderLoginForm()}

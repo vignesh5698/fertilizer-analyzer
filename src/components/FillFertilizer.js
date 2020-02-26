@@ -78,17 +78,17 @@ class FillFertilizer extends Component {
   render() {
     const { showError } = this.state;
     return (
-      <div>
+      <div className='fill-fertilizer'>
       <div className="card custom-card">
         <h3 className="card-header custom-title">
-          Fertilizer Analyzer
+          FERTILIZER ANALYZER
         </h3>
         <div className="card-body">
           {this.renderFillFertilizerForm()}
         </div>
         {showError ? this.renderLoginError() : ''}
-        <div className="card-footer text-muted custom-center">
-          <button type="button" className="btn btn-outline-primary mr-2" onClick={this.onRecommendation}>Get fertilizer recommendation</button>
+        <div className="card-footer text-muted custom-center p-3">
+          <button type="button" className="btn btn-outline-info mr-3" onClick={this.onRecommendation}>Get fertilizer recommendation</button>
           <button className="btn btn-outline-danger" onClick={this.props.onLogout}>Logout</button>
         </div>
       </div>
